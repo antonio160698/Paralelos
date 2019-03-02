@@ -17,7 +17,6 @@ public class guardar implements Serializable{
     private BigInteger antfa; 
     public guardar(BigInteger fa){
         this.fa = fa;
-        this.antfa = antfa;
     }
     public BigInteger getFa(){
         return fa;

@@ -22,8 +22,11 @@ public class Hilo extends Thread{
     public void run(){
         guardar g = new guardar();
         escribir s = new escribir();
-        System.out.println("desde "+ this.desde);
-        System.out.println("hasta "+ this.hasta);
+        //System.out.println("desde "+ this.desde);
+        //System.out.println("hasta "+ this.hasta);
+        if(desde==0){
+            desde=1;
+        }
         g = (guardar)s.lector_objetos("datos.dat");
         multiplicar m = new multiplicar();
         BigInteger fac = BigInteger.valueOf(1);
